@@ -265,7 +265,42 @@ legend {
 }
 
 #header {
+  background: #eee;
+}
+
+#gnb .btnMenu {
+  display: none;
+}
+#gnb .btn-menu {
+  display: none;
+}
+#gnb .m-util {
+  display: none;
+}
+#gnb .depth1 {
   display: flex;
-  justify-content: space-between;
+}
+#gnb .depth1 > li > a {
+  display: flex;
   align-items: center;
+  padding: 0 40px;
+  height: 90px;
+}
+#gnb .depth1 .depth2 {
+  display: none;
+}
+#gnb .depth1 .util {
+  display: flex;
+}
+#gnb .depth1 .lang {
+  display: flex;
+}
+#gnb .depth1 .lang a {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  height: 90px;
+}
+#gnb .depth1 .serach-area .layer-search {
+  display: none;
 }/*# sourceMappingURL=style.css.map */
