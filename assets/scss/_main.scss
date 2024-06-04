@@ -1,2 +1,10 @@
 // slide-intro
+.slide-intro {
+    .picture {
+        width: 100%;
+    }
+    img {
+        height: calc(100vh - $hdH);
+    }
+}
 // main

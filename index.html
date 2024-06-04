@@ -21,9 +21,13 @@
             href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap"
             rel="stylesheet"
         />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
         <link rel="stylesheet" href="./assets/css/style.css" />
+
         <!-- js -->
-        <script src="./assets/js/common.js"></script>
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script defer src="./assets/js/common.js"></script>
     </head>
     <body>
         <div id="u-skip">
@@ -31,14 +35,15 @@
             <a href="#main">본문 바로가기</a>
         </div>
         <div id="wrap">
-            <header id="header">
+            <!-- 60px 스크롤시 .active 추가 -->
+            <header id="header" class="active">
                 <div class="container">
                     <h1 id="logo">
                         <a href="/">logo</a>
                     </h1>
                     <nav id="gnb">
-                        <input type="checkbox" name="btnMenu" id="btnMenu" />
-                        <label for="btnMenu" class="btn-menu">
+                        <input type="checkbox" name="btnMenu" id="btnMenu" class="blind" />
+                        <label for="btnMenu" class="label-menu">
                             <div class="bar"></div>
                             <div class="bar"></div>
                             <div class="bar"></div>
@@ -91,12 +96,76 @@
                     </div>
                 </div>
             </header>
-            <div class="slide-intro">slide</div>
+            <!-- Swiper -->
+            <div class="swiper slide-intro">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <picture>
+                            <img
+                                src="https://images.unsplash.com/photo-1716396502668-26f0087e1c7d?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt=""
+                            />
+                        </picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <img
+                                src="https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?q=80&w=2036&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt=""
+                            />
+                        </picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <img
+                                src="https://images.unsplash.com/photo-1513407030348-c983a97b98d8?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt=""
+                            />
+                        </picture>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+
             <main id="main">
                 <section class="sec-g sec-1">
                     <div class="container">
                         <h2 class="sec-title">섹션 타이틀</h2>
-                        <div class="sec-content">섹션 내용</div>
+                        <div class="sec-content">
+                            <div class="swiper mySwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <picture>
+                                            <img
+                                                src="https://images.unsplash.com/photo-1716396502668-26f0087e1c7d?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                                alt=""
+                                            />
+                                        </picture>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <picture>
+                                            <img
+                                                src="https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?q=80&w=2036&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                                alt=""
+                                            />
+                                        </picture>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <picture>
+                                            <img
+                                                src="https://images.unsplash.com/photo-1513407030348-c983a97b98d8?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                                alt=""
+                                            />
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
                     </div>
                 </section>
 
