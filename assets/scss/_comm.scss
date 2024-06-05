@@ -122,10 +122,21 @@
             padding: 0;
             background-color: transparent;
             &:hover dd,
-            &:focus-within dd {
-                height: auto;
-                max-height: 300px;
-                padding: 10px 0 20px;
+            &:focus-within {
+                dt {
+                    a {
+                        color: $primary;
+                        text-decoration: none;
+                        &::after {
+                            content: '';
+                        }
+                    }
+                }
+                dd {
+                    height: auto;
+                    max-height: 300px;
+                    padding: 10px 0 20px;
+                }
             }
             dt {
                 font-size: 1.2em;
