@@ -8,10 +8,34 @@ var swiper = new Swiper('.slide-intro', {
     //   },
     pagination: {
         el: '.swiper-pagination',
-        clickable: true,
+        type: 'fraction',
     },
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
+    },
+});
+
+var swiper = new Swiper('.slide-etf .swiper', {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    loop: true,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    // pagination: {
+    // el: '.swiper-pagination',
+    // clickable: true,
+    // },
+    breakpoints: {
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+        },
+        1280: {
+            slidesPerView: 4,
+            spaceBetween: 24,
+        },
     },
 });
