@@ -15,19 +15,25 @@
         <meta name="twitter:image" content="http://www.mysite.com/article/article1.html" />
         <meta name="twitter:domain" content="사이트 명" />
         <!-- css -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
             href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap"
             rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
         />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
         <link rel="stylesheet" href="./assets/css/style.css" />
 
         <!-- js -->
         <!-- Swiper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-        <script defer src="./assets/js/common.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+        <script defer src="./assets/js/comm.js"></script>
+        <script defer src="./assets/js/main.js"></script>
     </head>
     <body>
         <div id="u-skip">
@@ -36,7 +42,7 @@
         </div>
         <div id="wrap">
             <!-- 60px 스크롤시 .active 추가 -->
-            <header id="header" class="active">
+            <header id="header" class="bg-w">
                 <div class="container">
                     <h1 id="logo">
                         <a href="/">logo</a>
@@ -59,7 +65,7 @@
                                 <!-- mobile 메뉴 클릭시 .active 추가 -->
                                 <dl class="">
                                     <dt>
-                                        <a href="#">menu1</a>
+                                        <a href="./about.company.html">about</a>
                                     </dt>
                                     <dd>
                                         <a href="#">menu1-1</a>
