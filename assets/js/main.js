@@ -16,7 +16,7 @@ var swiper = new Swiper('.slide-intro', {
     },
 });
 
-var swiper = new Swiper('.slide-eft .swiper', {
+var swiper = new Swiper('.slide-etf .swiper', {
     slidesPerView: 1,
     spaceBetween: 20,
     loop: true,

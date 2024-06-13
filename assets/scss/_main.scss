@@ -124,58 +124,43 @@
             }
         }
     }
-    .btn-search {
-        //display:none;
+}
+// main
+.sec-etf {
+    overflow: hidden;
+}
+.slide-etf {
+    position: relative;
+    .swiper {
+        overflow: visible;
+        width: 85%;
+        margin-left: 0;
+        margin-right: 0;
     }
-    .layer-search {
-        // display: none;
-    }
-    // main
-    .sec-etf {
-        overflow: hidden;
-    }
-    .slide-etf {
-        position: relative;
-        .swiper {
-            overflow: visible;
-            width: 85%;
-            margin-left: 0;
-            margin-right: 0;
-        }
 
-        .swiper-slide {
-            height: 400px;
-            background: $gray-300;
-            border-radius: 20px;
-        }
-        .swiper-button-prev {
-            left: -100px;
-            @include flexCenter;
-            width: 80px;
-            height: 80px;
-            margin: 0;
-            background: rgba($primary, 0.5);
-            transform: translateY(-50%);
-            &::after {
-                transform: scale(0.8);
-            }
-        }
-        .swiper-button-prev {
-            left: -100px;
-        }
-        .swiper-button-next {
-            right: -100px;
+    .swiper-slide {
+        height: 400px;
+        background: $gray-300;
+        border-radius: 20px;
+    }
+    .swiper-button-prev {
+        left: -100px;
+        @include flexCenter;
+        width: 80px;
+        height: 80px;
+        margin: 0;
+        background: rgba($primary, 0.5);
+        transform: translateY(-50%);
+        &::after {
+            transform: scale(0.8);
         }
     }
-    // .swiper-button-prev {
-    //     @include flexCenter;
-    //     left: -100px;
-    //     width: 80px;
-    //     height: 80px;
-    //     margin: 0;
-    //     border-radius: 50%;
-    //     background: rgba($gray-300, 0.5);
-    // }
+    .swiper-button-prev {
+        left: -100px;
+    }
+    .swiper-button-next {
+        right: -100px;
+    }
 }
 @media screen and (min-width: $breakpoint-md) {
     .slide-etf .swiper {
@@ -183,30 +168,9 @@
     }
 }
 @media screen and (min-width: $breakpoint-xl) {
-    .slide-etf {
+    .slide-etf .swiper {
         width: 100%;
     }
 }
 
-// section
-
-.sec-type1 {
-    padding: 50px 0;
-    .sec-title {
-        padding: 30px 0;
-        font-size: 1.875rem;
-        color: $black;
-        text-align: center;
-    }
-}
-.sec-type2 {
-    color: $black;
-    text-align: center;
-}
-@media screen and (min-width: $breakpoint-xl) {
-    .sec-type1,
-    .sec-type2 {
-        padding: 150px 0;
-    }
-}
 // footer

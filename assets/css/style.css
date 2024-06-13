@@ -311,10 +311,9 @@ legend {
 }
 
 .swiper-slide {
-  height: 300px;
   text-align: center;
   font-size: 18px;
-  background: red;
+  background: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -370,8 +369,11 @@ legend {
 }
 
 @media screen and (min-width: 1280px) {
-  #header {
-    position: relative;
+  #header.bg-w * {
+    color: #000;
+  }
+  #header * {
+    color: #fff;
   }
 }
 #gnb {
@@ -966,24 +968,26 @@ footer .footer_cont .footer_right .famliy_site.on button::after {
     height: 640px;
   }
 }
-.slide-intro .sec-etf {
+
+.sec-etf {
   overflow: hidden;
 }
-.slide-intro .slide-etf {
+
+.slide-etf {
   position: relative;
 }
-.slide-intro .slide-etf .swiper {
+.slide-etf .swiper {
   overflow: visible;
   width: 85%;
   margin-left: 0;
   margin-right: 0;
 }
-.slide-intro .slide-etf .swiper-slide {
+.slide-etf .swiper-slide {
   height: 400px;
   background: #e0e0e0;
   border-radius: 20px;
 }
-.slide-intro .slide-etf .swiper-button-prev {
+.slide-etf .swiper-button-prev {
   left: -100px;
   display: flex;
   justify-content: center;
@@ -994,13 +998,13 @@ footer .footer_cont .footer_right .famliy_site.on button::after {
   background: rgba(68, 93, 237, 0.5);
   transform: translateY(-50%);
 }
-.slide-intro .slide-etf .swiper-button-prev::after {
+.slide-etf .swiper-button-prev::after {
   transform: scale(0.8);
 }
-.slide-intro .slide-etf .swiper-button-prev {
+.slide-etf .swiper-button-prev {
   left: -100px;
 }
-.slide-intro .slide-etf .swiper-button-next {
+.slide-etf .swiper-button-next {
   right: -100px;
 }
 
@@ -1010,28 +1014,7 @@ footer .footer_cont .footer_right .famliy_site.on button::after {
   }
 }
 @media screen and (min-width: 1280px) {
-  .slide-etf {
+  .slide-etf .swiper {
     width: 100%;
-  }
-}
-.sec-type1 {
-  padding: 50px 0;
-}
-.sec-type1 .sec-title {
-  padding: 30px 0;
-  font-size: 1.875rem;
-  color: #000;
-  text-align: center;
-}
-
-.sec-type2 {
-  color: #000;
-  text-align: center;
-}
-
-@media screen and (min-width: 1280px) {
-  .sec-type1,
-  .sec-type2 {
-    padding: 150px 0;
   }
 }/*# sourceMappingURL=style.css.map */
